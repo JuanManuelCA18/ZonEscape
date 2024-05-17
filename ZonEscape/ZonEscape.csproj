@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60F7E01F-F316-4DED-BC55-723693088275}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZonEscape</RootNamespace>
+    <AssemblyName>ZonEscape</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio.cs" />
+    <Compile Include="Corazon.cs" />
+    <Compile Include="Crespo.cs" />
+    <Compile Include="FireWarlock.cs" />
+    <Compile Include="FlyEye.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMensaje.Designer.cs">
+      <DependentUpon>formMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impacto.cs" />
+    <Compile Include="ObjetoGrafico.cs" />
+    <Compile Include="Personajes.cs" />
+    <Compile Include="PoisionMonster.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salto.cs" />
+    <Compile Include="Tile.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMensaje.resx">
+      <DependentUpon>formMensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileContinuo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoD .gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoIz.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoQuemadoD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlockD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEyeD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonsterD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BulletBall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireBall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IceBall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionBall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorazonEntero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorazonMedio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorazonVacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlock_1_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlock_1_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlock_2_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlock_2_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlock_3_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlock_3_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlock_4_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireWarlock_4_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEye_1_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEye_1_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEye_2_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEye_2_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEye_3_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEye_3_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEye_4_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlyEye_4_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonster_1_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonster_1_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonster_2_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonster_2_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonster_3_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonster_3_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonster_4_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisionMonster_4_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoD_1_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoD_1_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoD_2_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoD_2_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoD_3_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoD_3_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoD_4_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrespoAnimadoD_4_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crespoAnimadoD_1_quieto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crespoAnimadoD_2_quieto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crespoAnimadoD_3_quieto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crespoAnimadoD_4_quieto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Helicoptero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Win.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundInicio.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inicio.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

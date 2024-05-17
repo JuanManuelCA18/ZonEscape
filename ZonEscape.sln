@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32428.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZonEscape", "ZonEscape\ZonEscape.csproj", "{60F7E01F-F316-4DED-BC55-723693088275}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60F7E01F-F316-4DED-BC55-723693088275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F7E01F-F316-4DED-BC55-723693088275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F7E01F-F316-4DED-BC55-723693088275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F7E01F-F316-4DED-BC55-723693088275}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31998EB7-258C-4656-AA48-F3E07FB79714}
+	EndGlobalSection
+EndGlobal
